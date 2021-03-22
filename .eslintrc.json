@@ -17,8 +17,7 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint",
-        "jest"
+        "@typescript-eslint"
     ],
     "rules": {
         "no-use-before-define": "off",
@@ -26,11 +25,14 @@
             "error"
         ],
         "linebreak-style": 0,
-        "react/jsx-filename-extension": 0,
-        "jest/no-disabled-tests": "warn",
-        "jest/no-focused-tests": "error",
-        "jest/no-identical-title": "error",
-        "jest/prefer-to-have-length": "warn",
-        "jest/valid-expect": "error"
-    }
+        "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
+        "import/extensions": "off"
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        }
+      }
 }
