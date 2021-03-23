@@ -3,7 +3,7 @@ module.exports = {
   preset: 'ts-jest',
   coverageDirectory: 'coverage',
   setupFilesAfterEnv: [
-    'jest-enzyme',
+    '@testing-library/react',
   ],
   moduleFileExtensions: [
     'js',
