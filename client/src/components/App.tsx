@@ -1,8 +1,8 @@
 import React from 'react';
 
 const App: React.FC = () => (
-  <div>
-    Hello from App2
+  <div className="app-container">
+    <span id="child">Test</span>
   </div>
 );
 
