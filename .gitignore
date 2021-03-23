@@ -102,3 +102,6 @@ bundle.js
 
 # TernJS port file
 .tern-port
+
+# testing snapshots
+__snapshots__
