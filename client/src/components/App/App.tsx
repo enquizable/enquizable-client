@@ -1,8 +1,19 @@
 import React from 'react';
+import Header from '../Header/Header';
 
 const App: React.FC = () => (
   <div className="app-container">
-    <span id="child">hello</span>
+    <header>
+      <Header />
+    </header>
+    <main>
+      Main component
+    </main>
+    <footer>
+      <div>
+        All rights is reserved.
+      </div>
+    </footer>
   </div>
 );
 

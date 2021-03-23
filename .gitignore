@@ -105,3 +105,7 @@ bundle.js
 
 # testing snapshots
 __snapshots__
+
+# style sheet
+style.css
+style.css.map

@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html {
+  font-size: 62.5%;
+  /* border-box help us handle margin and padding easier */
+  box-sizing: border-box;
+}
+
+body, #root {
+  height: 100vh; 
+  margin: 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  background-image: url('https://enquizable-client.s3-us-west-1.amazonaws.com/luke-chesser-CxBx_J3yp9g-unsplash.jpg');
+  background-size: 100% 100%;
+}
+
+// App layout
+@import './components/App/App';
+
+// Header layout
+@import './components/Header/Header';
