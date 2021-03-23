@@ -1,11 +1,10 @@
 import React from 'react';
+import Header from '../Header/Header';
 
 const App: React.FC = () => (
   <div className="app-container">
     <header>
-      <div>
-        Enquizable
-      </div>
+      <Header />
     </header>
     <main>
       Main component

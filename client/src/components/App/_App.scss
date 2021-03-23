@@ -1,0 +1,36 @@
+.app-container {
+  display: grid;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+  grid-template-rows: 11rem 1fr 11rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+
+  header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    color: white;
+    // border-bottom: solid;
+    // border-color: white;
+    // border-width: 0.2rem;
+  }
+
+  main {
+    grid-area: main;
+    background-color: white;
+  }
+
+  footer {
+    grid-area: footer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    // border-top: solid;
+    // border-color: white;
+    // border-width: 0.2rem;
+  }
+}
