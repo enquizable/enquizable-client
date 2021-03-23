@@ -1,0 +1,3 @@
+# do not lint these files/folders
+bundle.js
+node_modules/
