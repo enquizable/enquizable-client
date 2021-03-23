@@ -2,7 +2,19 @@ import React from 'react';
 
 const App: React.FC = () => (
   <div className="app-container">
-    <span id="child">hello</span>
+    <header>
+      <div>
+        Enquizable
+      </div>
+    </header>
+    <main>
+      Main component
+    </main>
+    <footer>
+      <div>
+        All rights is reserved.
+      </div>
+    </footer>
   </div>
 );
 

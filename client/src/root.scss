@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html {
+  font-size: 62.5%;
+  /* border-box help us handle margin and padding easier */
+  box-sizing: border-box;
+}
+
+body, #root {
+  height: 100vh; 
+  margin: 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  background-image: url('https://enquizable-client.s3-us-west-1.amazonaws.com/luke-chesser-CxBx_J3yp9g-unsplash.jpg');
+  background-size: 100% 100%;
+}
+
+.app-container {
+  display: grid;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+  grid-template-rows: 10rem 1fr 10rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+
+  header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    color: lightgray;
+    border-bottom: solid;
+    border-color: lightgray;
+    border-width: 0.2rem;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: lightgray;
+    border-top: solid;
+    border-color: lightgray;
+    border-width: 0.2rem;
+  }
+}
