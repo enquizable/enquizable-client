@@ -19,7 +19,7 @@ body, #root {
 @import './components/App/App';
 
 // Header component
-@import './components/Header/Header';
+@import './components/App/Header/Header';
 
 // Browse component
-@import './components/BrowseDisplay/BrowseDisplay';
+@import './components/App/BrowseDisplay/BrowseDisplay';
