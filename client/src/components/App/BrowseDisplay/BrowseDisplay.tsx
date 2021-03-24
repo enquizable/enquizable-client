@@ -1,5 +1,5 @@
 import React from 'react';
-import BrowseQuizeList from './BrowseQuizeList/BrowseQuizeList';
+import BrowseQuizList from './BrowseQuizeList/BrowseQuizeList';
 import BrowseSearchBar from './BrowseSearchBar/BrowseSearchBar';
 
 const BrowseDisplay: React.FC = () => (
@@ -7,7 +7,7 @@ const BrowseDisplay: React.FC = () => (
     <div className="browse-display-wrapper">
       <BrowseSearchBar />
       <div className="problem-display-wrapper">
-        <BrowseQuizeList />
+        <BrowseQuizList />
       </div>
     </div>
   </div>

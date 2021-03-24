@@ -1,64 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import data from '../../../../../../DummyData';
+import QuizItem from './QuizItem/QuizItem';
 
-const BrowseQuizeList: React.FC = () => (
-  <div>
-    <ul>
-      <li>
-        Hardest problem in the World
-      </li>
-      <li>
-        EZ CALP problems
-      </li>
-      <li>
-        SYSTEM DESIGNS!
-      </li>
-      <li>
-        How many days are in a week
-      </li>
-      <li>
-        Kats vs dodge
-      </li>
-      <li>
-        JavaScript
-      </li>
-      <li>
-        Python
-      </li>
-      <li>
-        C++
-      </li>
-      <li>
-        Java
-      </li>
-      <li>
-        Hardest problem in the World
-      </li>
-      <li>
-        EZ CALP problems
-      </li>
-      <li>
-        SYSTEM DESIGNS!
-      </li>
-      <li>
-        How many days are in a week
-      </li>
-      <li>
-        Kats vs dodge
-      </li>
-      <li>
-        JavaScript
-      </li>
-      <li>
-        Python
-      </li>
-      <li>
-        C++
-      </li>
-      <li>
-        Java
-      </li>
-    </ul>
-  </div>
-);
+const BrowseQuizList: React.FC = () => {
+  const [quizes] = useState(data.quizes);
+  return (
+    <div className="browse-quiz-list">
+      <ul>
+        {quizes.map((quiz) => (
+          <QuizItem id={quiz.id} title={quiz.title} key={quiz.id} />
+        ))}
+      </ul>
+    </div>
+  );
+};
 
-export default BrowseQuizeList;
+export default BrowseQuizList;
