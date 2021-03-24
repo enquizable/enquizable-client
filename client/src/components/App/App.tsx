@@ -1,4 +1,5 @@
 import React from 'react';
+import BrowseDisplay from '../BrowseDisplay/BrowseDisplay';
 import Header from '../Header/Header';
 
 const App: React.FC = () => (
@@ -7,7 +8,7 @@ const App: React.FC = () => (
       <Header />
     </header>
     <main>
-      Main component
+      <BrowseDisplay />
     </main>
     <footer>
       <div>
