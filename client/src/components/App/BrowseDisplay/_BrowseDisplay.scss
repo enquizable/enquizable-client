@@ -1,0 +1,46 @@
+.browse-display {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+  &-wrapper {
+    padding: 5vh;
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+
+    .search-bar-wrapper {
+      height: 3.5rem;
+      .d-flex {
+        height: 100%;
+      }
+      input {
+        font-size: large;
+      }
+      button {
+        font-size: large;
+      }
+    }
+
+    .problem-display-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+      max-height: 53vh;
+      min-height: 53vh;
+      overflow-y: scroll;
+
+      padding: 5vh;
+      margin-top: 5vh;
+      
+      border: solid;
+      border-width: 0.2rem;
+      border-color: lightgray;
+      border-radius: 0.4rem;
+
+      // quiz list component
+      @import './BrowseQuizeList/BrowseQuizList';
+    }
+  }
+}

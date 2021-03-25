@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from '../Header/Header';
+import BrowseDisplay from './BrowseDisplay/BrowseDisplay';
+import Header from './Header/Header';
 
 const App: React.FC = () => (
   <div className="app-container">
@@ -7,7 +8,7 @@ const App: React.FC = () => (
       <Header />
     </header>
     <main>
-      Main component
+      <BrowseDisplay />
     </main>
     <footer>
       <div>

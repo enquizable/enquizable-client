@@ -15,8 +15,11 @@ body, #root {
   background-size: 100% 100%;
 }
 
-// App layout
+// App component
 @import './components/App/App';
 
-// Header layout
-@import './components/Header/Header';
+// Header component
+@import './components/App/Header/Header';
+
+// Browse component
+@import './components/App/BrowseDisplay/BrowseDisplay';
