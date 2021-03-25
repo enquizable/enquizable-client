@@ -15,11 +15,13 @@
 
   &-option-container {
     grid-area: options;
-    display: flex;
     
     div {
-      margin: 2rem;
+      margin-left: 1.5rem;
     }
+
+    // nav bar
+    @import './Nav/Nav';
   }
 
   &-login {
