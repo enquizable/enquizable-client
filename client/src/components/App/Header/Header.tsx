@@ -1,4 +1,5 @@
 import React from 'react';
+import Login from './Login/Login';
 import Nav from './Nav/Nav';
 
 const Header: React.FC = () => (
@@ -10,7 +11,7 @@ const Header: React.FC = () => (
       <Nav />
     </div>
     <div className="header-comp-login">
-      login
+      <Login />
     </div>
   </div>
 );

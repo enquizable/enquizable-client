@@ -1,0 +1,12 @@
+.login-container {
+  @extend %Nav-bar-btn;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .modal {
+    color: black;
+  }
+}
