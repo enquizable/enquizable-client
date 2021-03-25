@@ -1,4 +1,6 @@
 import React from 'react';
+import Login from './Login/Login';
+import Nav from './Nav/Nav';
 
 const Header: React.FC = () => (
   <div className="header-comp">
@@ -6,15 +8,10 @@ const Header: React.FC = () => (
       Enquizable
     </div>
     <div className="header-comp-option-container">
-      <div>
-        home
-      </div>
-      <div>
-        create
-      </div>
+      <Nav />
     </div>
     <div className="header-comp-login">
-      login
+      <Login />
     </div>
   </div>
 );
